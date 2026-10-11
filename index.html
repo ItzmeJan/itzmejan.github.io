@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan — Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-transition"></div>
+
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <span class="nav-logo">jan</span>
+            <div class="nav-links">
+                <a href="#" class="nav-link active" data-page="home">Home</a>
+                <a href="#" class="nav-link" data-page="projects">Projects</a>
+                <a href="#" class="nav-link" data-page="about">About</a>
+                <a href="#" class="nav-link" data-page="contact">Contact</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <span class="toggle-track">
+                    <span class="toggle-thumb"></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="content-box">
+        <section id="home" class="page active">
+            <div class="hero">
+                <h1 class="hero-title">Jan</h1>
+                <p class="hero-subtitle">Developer · Reverse Engineer · Anime Enthusiast</p>
+                <p class="hero-desc">5+ years building things across Rust, TypeScript, and everything in between.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="page">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                <a href="https://github.com/ItzmeJan/NarrowMind" class="project-card" target="_blank">
+                    <h3 class="project-name">NarrowMind</h3>
+                    <p class="project-lang">Rust · NLP</p>
+                    <p class="project-desc">Statistical language model for QA and text generation. 90+ stars.</p>
+                </a>
+                <a href="https://github.com/ItzmeJan/DeCharge" class="project-card" target="_blank">
+                    <h3 class="project-name">DeCharge</h3>
+                    <p class="project-lang">TypeScript · Solana</p>
+                    <p class="project-desc">Decentralized EV charging with Phantom wallet and SPL-token payments.</p>
+                </a>
+                <a href="https://github.com/ItzmeJan/sysmonitor" class="project-card" target="_blank">
+                    <h3 class="project-name">sysmonitor</h3>
+                    <p class="project-lang">Rust · Win32 API</p>
+                    <p class="project-desc">Windows activity monitor with REST API. Under 1% idle CPU.</p>
+                </a>
+                <a href="https://github.com/ItzmeJan" class="project-card" target="_blank">
+                    <h3 class="project-name">View All</h3>
+                    <p class="project-lang">GitHub</p>
+                    <p class="project-desc">25+ repositories and counting.</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="page">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <p>I'm Jan — a self-taught developer who breaks things on purpose, then figures out how to fix them.</p>
+                <p>5+ years of programming. 30+ projects shipped. Always learning, always zoning in.</p>
+                <div class="skills-grid">
+                    <span class="skill">Rust</span>
+                    <span class="skill">TypeScript</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">Python</span>
+                    <span class="skill">Node.js</span>
+                    <span class="skill">PostgreSQL</span>
+                    <span class="skill">Docker</span>
+                    <span class="skill">Cloudflare</span>
+                    <span class="skill">Linux</span>
+                    <span class="skill">Reverse Engineering</span>
+                    <span class="skill">Solana</span>
+                    <span class="skill">ESP32</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:itzmejan@icloud.com" class="contact-item">
+                    <span class="contact-value">itzmejan@icloud.com</span>
+                </a>
+                <a href="https://github.com/ItzmeJan" class="contact-item" target="_blank">
+                    <span class="contact-value">github.com/ItzmeJan</span>
+                </a>
+                <a href="https://linkedin.com/in/-anjankumar" class="contact-item" target="_blank">
+                    <span class="contact-value">linkedin.com/in/-anjankumar</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div id="snowflakes"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
