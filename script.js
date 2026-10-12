@@ -62,8 +62,11 @@ function createSnowflake() {
     setTimeout(() => flake.remove(), 15000);
 }
 
-for (let i = 0; i < 25; i++) {
+const isMobile = window.matchMedia('(max-width: 640px)').matches;
+const snowDensity = isMobile ? 0.75 : 1;
+
+for (let i = 0; i < Math.round(25 * snowDensity); i++) {
     setTimeout(createSnowflake, i * 300);
 }
 
-setInterval(createSnowflake, 800);
+setInterval(createSnowflake, 800 / snowDensity);
