@@ -1,6 +1,7 @@
 const pages = document.querySelectorAll('.page');
 const navLinks = document.querySelectorAll('.nav-link');
 const transition = document.querySelector('.page-transition');
+const resumeWrap = document.getElementById('resumeWrap');
 
 function navigateTo(pageId) {
     const targetPage = document.getElementById(pageId);
@@ -13,6 +14,7 @@ function navigateTo(pageId) {
 
     navLinks.forEach(link => link.classList.remove('active'));
     document.querySelector(`[data-page="${pageId}"]`).classList.add('active');
+    resumeWrap.classList.toggle('visible', pageId === 'about');
 }
 
 navLinks.forEach(link => {
